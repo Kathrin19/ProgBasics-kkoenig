@@ -6,6 +6,9 @@ public class ProgBasics : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+        
+
         Debug.Log("erste Tests mit Operatoren");
 
         Debug.Log("Multiplikative Operatoren: *"+(2 * 8));
@@ -20,7 +23,8 @@ public class ProgBasics : MonoBehaviour {
         Debug.Log("Relationale Operatoren: <=" + (3 <= 3));
         Debug.Log("Relationale Operatoren: >=" + (3 >= 6));
 
-
+        Debug.Log("Gleichheits Operatoren: =" + ( "Blau" == "blau"));
+        Debug.Log("Gleichheits Operatoren: !=" + ("Blau" == "blau"));
 
 
 
