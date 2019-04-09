@@ -28,7 +28,7 @@ public class ProgBasics : MonoBehaviour {
         Debug.Log("Gleichheits Operatoren: =" + ( "Blau" == "blau"));
         Debug.Log("Gleichheits Operatoren: !=" + ("Blau" == "blau"));
 
-        //// Logische Operatoren
+        // Logische Operatoren
         Debug.Log("Logische Operatoren: &" + (true && false));
         Debug.Log("Logische Operatoren: |" + (true || false));
     }
