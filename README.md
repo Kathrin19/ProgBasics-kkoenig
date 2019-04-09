@@ -2,7 +2,7 @@
 Operatoren-Test <br>
 
 <div>
-<img src="./Screenshots/WelcomeScene.jpg" width="250">
+<img src="Screenshots/WelcomeScene.jpg" width="250">
 </div>
 
 <h3>Developer Infos</h3> 
