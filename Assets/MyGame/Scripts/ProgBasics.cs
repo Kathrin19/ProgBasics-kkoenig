@@ -10,7 +10,11 @@ public class ProgBasics : MonoBehaviour {
         Bsp1();
         Bsp2();
         AddNumbers(1,2);
+        AddNumbers(4, 9);
         MultNumbers(2, 2, 2, 2);
+        Debug.Log(MyText("kkoenig"));
+        string drama = MyText("kkoenig");
+        Debug.Log("neu" + drama);
     }
 
     public void Operators()
@@ -68,6 +72,11 @@ public class ProgBasics : MonoBehaviour {
         MultNumbers(4, 2, 1, 3);
         Operators();
         AddNumbers(100, 1000);
+    }
+
+    public string MyText(string myName )
+    {
+        return "Drama " + " " + myName;
     }
 	
 	// Update is called once per frame
