@@ -9,6 +9,8 @@ public class ProgBasics : MonoBehaviour {
         Operators();
         Bsp1();
         Bsp2();
+        AddNumbers(1,2);
+        MultNumbers(2, 2, 2, 2);
     }
 
     public void Operators()
@@ -47,6 +49,25 @@ public class ProgBasics : MonoBehaviour {
     public void Bsp2()
     {
         Debug.Log("true" == "false");
+    }
+
+    public void AddNumbers(int a, int b)
+    {
+        int c = a + b;
+        Debug.Log("add numbers: " + c);
+    }
+
+    public void MultNumbers(int a, int b, int c, int d)
+    {
+        int e = a * b * c * d;
+        Debug.Log("multiply numbers: " + e);
+    }
+
+    public void Combine()
+    {
+        MultNumbers(4, 2, 1, 3);
+        Operators();
+        AddNumbers(100, 1000);
     }
 	
 	// Update is called once per frame
