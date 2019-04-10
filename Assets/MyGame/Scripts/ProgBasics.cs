@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class ProgBasics : MonoBehaviour {
 
+    public int test1;
+    public float test2;
+    public string test3;
+
 	// Use this for initialization
 	void Start () {
+        test1 = 1;
+        Debug.Log("test1 in Start" + test1);
         Operators();
         Bsp1();
         Bsp2();
@@ -59,6 +65,8 @@ public class ProgBasics : MonoBehaviour {
     {
         int c = a + b;
         Debug.Log("add numbers: " + c);
+        test1 = 3;
+        Debug.Log("test 1 in AddNumbers " + test1);
     }
 
     public void MultNumbers(int a, int b, int c, int d)
@@ -74,7 +82,7 @@ public class ProgBasics : MonoBehaviour {
         AddNumbers(100, 1000);
     }
 
-    public string MyText(string myName )
+    public string MyText(string myName)
     {
         return "Drama " + " " + myName;
     }
