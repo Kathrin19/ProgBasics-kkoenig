@@ -3,9 +3,11 @@
 **Progress:** 100%
 
 ### Development Platform
-- Windows 10
+- OS: Windows 10
 - Unity Version: 2018.2.14f1
 - Visual Studio Version: 2017 15.9.4
+- Scripting Runtime: .NET 35 Equivalent
+- API Compatility: .NET 2.0 Subset
 
 ### Description
 - **Tests Operatoren:** Mit Debug.Log in einem C# Script werden verschiedene Operatoren (Multiplikativ, Additiv, Relational, Gleichheits und Logisch) in die Unity Console geschrieben.
@@ -18,7 +20,8 @@
 
 - Unity Console
 <div> <img src="./Screenshots/konsole.jpg" width="300"> </div>
-<div>
+
+Copyright by Kathrin König
 
 
 

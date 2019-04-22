@@ -16,7 +16,7 @@ public class ProgBasics : MonoBehaviour
     {
         // Variables Test
         test1 = 1;
-        test2 = 2.75F;
+        test2 = 2.75f;
         test3 = "test3";
         test4 = true;
         test5 = 'C';
@@ -37,13 +37,16 @@ public class ProgBasics : MonoBehaviour
         Operators();
         Bsp1();
         Bsp2();
+        Bsp3();
         changeTest1();
+        floatAdd();
+
 
         // Add values for parameters
         AddNumbers(4, 9);
         MultNumbers(2, 2, 2, 2);
         SubtractNumbers(2, 1);
-        Infos("Kathrin", 18, 1.75F);
+        Infos("Kathrin", 18, 1.75f);
 
         // Return type
         Debug.Log(MyText("kkoenig"));
@@ -89,6 +92,27 @@ public class ProgBasics : MonoBehaviour
     public void Bsp2()
     {
         Debug.Log("true" == "false");
+    }
+
+    // Verschachtelte Methode
+    public void Bsp3()
+    {
+        XY();
+    }
+
+    public void XY()
+    {
+        Debug.Log("XY wird ausgeführt");
+    }
+
+    public void floatAdd()
+    {
+        float zwei;
+        float drei;
+        zwei = 2.222f;
+        drei = 3.333f;
+
+        Debug.Log("Addiere float: " + (zwei + drei));
     }
 
     // Parameters Methodes
