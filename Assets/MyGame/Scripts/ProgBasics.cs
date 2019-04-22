@@ -2,27 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProgBasics : MonoBehaviour {
-
+public class ProgBasics : MonoBehaviour 
+{
+    // Public variables
     public int test1;
     public float test2;
     public string test3;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
+        // Variables Test
         test1 = 1;
-        Debug.Log("test1 in Start" + test1);
+        test2 = 1.25F;
+        test3 = "test3";
+        Debug.Log("test1 in Start (int)" + test1);
+        Debug.Log("test2 in Start (float)" + test2);
+        Debug.Log("test3 in Start (string)" + test3);
+
         Operators();
         Bsp1();
         Bsp2();
-        AddNumbers(1,2);
+
+        // Add values for parameters
         AddNumbers(4, 9);
         MultNumbers(2, 2, 2, 2);
+        SubtractNumbers(2, 1);
+        Infos("Kathrin", 18, 1.75F);
+
+        // Return type
         Debug.Log(MyText("kkoenig"));
         string drama = MyText("kkoenig");
         Debug.Log("neu" + drama);
+        Debug.Log(Menu("Salad", "Steak", "Cake"));
     }
 
+    // Methode Operatoren
     public void Operators()
     {
         Debug.Log("erste Tests mit Operatoren");
@@ -61,6 +76,7 @@ public class ProgBasics : MonoBehaviour {
         Debug.Log("true" == "false");
     }
 
+    // Parameters Methodes
     public void AddNumbers(int a, int b)
     {
         int c = a + b;
@@ -75,18 +91,35 @@ public class ProgBasics : MonoBehaviour {
         Debug.Log("multiply numbers: " + e);
     }
 
-    public void Combine()
+    public void SubtractNumbers(int a, int b)
     {
-        MultNumbers(4, 2, 1, 3);
-        Operators();
-        AddNumbers(100, 1000);
+        int c = a - b;
+        Debug.Log("subtract numbers: " + c);
     }
 
+    public void Infos(string name, int age, float height)
+    {
+        Debug.Log("Name: " + name + " " + "Alter: " +age + " " + "Größe: " + height);
+    }
+
+    // Return String Methodes
     public string MyText(string myName)
     {
         return "Drama " + " " + myName;
     }
-	
+
+    public string Menu(string supper, string main, string dessert)
+    {
+        return "Supper: " + supper + " " + "Main: " + main + " " + "Dessert: " + dessert;
+    }
+    // Combine Methode
+    public void Combine()
+    {
+        Operators();
+        MultNumbers(4, 2, 1, 3);
+        AddNumbers(100, 1000);
+    }
+
 	// Update is called once per frame
 	void Update () {
 		
