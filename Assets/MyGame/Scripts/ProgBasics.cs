@@ -8,21 +8,36 @@ public class ProgBasics : MonoBehaviour
     public int test1;
     public float test2;
     public string test3;
+    public bool test4;
+    public char test5;
 
 	// Use this for initialization
 	void Start ()
     {
         // Variables Test
         test1 = 1;
-        test2 = 1.25F;
+        test2 = 2.75F;
         test3 = "test3";
+        test4 = true;
+        test5 = 'C';
         Debug.Log("test1 in Start (int)" + test1);
         Debug.Log("test2 in Start (float)" + test2);
         Debug.Log("test3 in Start (string)" + test3);
+        Debug.Log("test4 in Start (bool)" + test4);
+        Debug.Log("test5 in Start (character)" + test5);
+
+        // change data type using cast
+        test1 = (int) test2;
+        Debug.Log("new value for int: " + test1);
+
+        // change data type using ToString Methode
+        test3 = test5.ToString();
+        Debug.Log("new value for string: " + test3);
 
         Operators();
         Bsp1();
         Bsp2();
+        changeTest1();
 
         // Add values for parameters
         AddNumbers(4, 9);
@@ -102,6 +117,13 @@ public class ProgBasics : MonoBehaviour
         Debug.Log("Name: " + name + " " + "Alter: " +age + " " + "Größe: " + height);
     }
 
+    // Change values
+    public void changeTest1()
+    {
+        test1 = 2;
+        Debug.Log("Changed test1= " + test1);
+    }
+
     // Return String Methodes
     public string MyText(string myName)
     {
@@ -112,6 +134,7 @@ public class ProgBasics : MonoBehaviour
     {
         return "Supper: " + supper + " " + "Main: " + main + " " + "Dessert: " + dessert;
     }
+
     // Combine Methode
     public void Combine()
     {
