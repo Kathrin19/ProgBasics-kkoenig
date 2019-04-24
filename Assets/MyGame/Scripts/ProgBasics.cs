@@ -38,9 +38,8 @@ public class ProgBasics : MonoBehaviour
         Bsp1();
         Bsp2();
         Bsp3();
-        changeTest1();
-        floatAdd();
-
+        ChangeTest1();
+        FloatAdd();
 
         // Add values for parameters
         AddNumbers(4, 9);
@@ -105,7 +104,7 @@ public class ProgBasics : MonoBehaviour
         Debug.Log("XY wird ausgeführt");
     }
 
-    public void floatAdd()
+    public void FloatAdd()
     {
         float zwei;
         float drei;
@@ -142,7 +141,7 @@ public class ProgBasics : MonoBehaviour
     }
 
     // Change values
-    public void changeTest1()
+    public void ChangeTest1()
     {
         test1 = 2;
         Debug.Log("Changed test1= " + test1);
