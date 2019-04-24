@@ -1,6 +1,6 @@
 # ProgBasics-kkoenig
 
-**Progress:** 100%
+**Progress:** 20%
 
 ### Development Platform
 - OS: Windows 10
@@ -20,6 +20,9 @@
 
 - Unity Console
 <div> <img src="./Screenshots/konsole.jpg" width="300"> </div>
+
+### Lessons Learned
+- Umgang mit Variablen und Methoden in C#
 
 Copyright by Kathrin König
 
